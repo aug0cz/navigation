@@ -1,0 +1,22 @@
+.html :global(.html) {
+  --bg-primary-color: red;
+}
+
+.name {
+  @apply min-h-screen;
+  @apply bg-gray-200;
+}
+
+.button {
+  @apply px-2 py-1;
+}
+
+.buttonPrimary {
+  @extend .button;
+  @apply bg-primary-500;
+}
+
+.buttonSecondary {
+  @extend .button;
+  @apply bg-secondary-500;
+}
