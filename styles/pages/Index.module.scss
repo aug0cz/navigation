@@ -1,10 +1,5 @@
-.html :global(.html) {
-  --bg-primary-color: red;
-}
-
-.name {
-  @apply min-h-screen;
-  @apply bg-gray-200;
+.container {
+  @apply min-h-screen text-primary-700 p-4;
 }
 
 .button {

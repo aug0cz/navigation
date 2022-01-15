@@ -2,12 +2,15 @@ lockfileVersion: 5.3
 
 specifiers:
   '@babel/core': ^7.16.7
+  '@types/mockjs': ^1.0.6
   '@types/node': ^17.0.8
   '@types/react': ^17.0.38
   autoprefixer: ^10.4.2
+  bootstrap-icons: ^1.7.2
   eslint: ^8.6.0
   eslint-config-next: ^12.0.8
   eslint-config-prettier: ^8.3.0
+  mockjs: ^1.1.0
   next: ^12.0.8
   postcss: ^8.4.5
   react: ^17.0.2
@@ -18,18 +21,21 @@ specifiers:
   typescript-plugin-css-modules: ^3.4.0
 
 dependencies:
+  bootstrap-icons: 1.7.2
   next: 12.0.8_cd0ca1ea9ef86e41925f9423a5cd6c4e
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
 
 devDependencies:
   '@babel/core': 7.16.7
+  '@types/mockjs': 1.0.6
   '@types/node': 17.0.8
   '@types/react': 17.0.38
   autoprefixer: 10.4.2_postcss@8.4.5
   eslint: 8.6.0
   eslint-config-next: 12.0.8_7f21bb180a1c4d161d5e7dba1f01d17e
   eslint-config-prettier: 8.3.0_eslint@8.6.0
+  mockjs: 1.1.0
   postcss: 8.4.5
   sass: 1.48.0
   tailwindcss: 3.0.13_ef48b3b8837f8a23677bffe8f9cd866d
@@ -452,6 +458,10 @@ packages:
     resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=}
     dev: true
 
+  /@types/mockjs/1.0.6:
+    resolution: {integrity: sha512-Yu5YlqbYZyqsd6LjO4e8ONJDN9pTSnciHDcRP4teNOh/au2b8helFhgRx+3w8xsTFEnwr9jtfTVJbAx+eYmlHA==}
+    dev: true
+
   /@types/node/17.0.8:
     resolution: {integrity: sha512-YofkM6fGv4gDJq78g4j0mMuGMkZVxZDgtU0JRdx6FgiJDG+0fY0GKVolOV8WqVmEhLCXkQRjwDdKyPxJp/uucg==}
 
@@ -713,6 +723,11 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /bootstrap-icons/1.7.2:
+    resolution: {integrity: sha512-NiR2PqC73AQOPdVSu6GJfnk+hN2z6powcistXk1JgPnKuoV2FSdSl26w931Oz9HYbKCcKUSB6ncZTYJAYJl3QQ==}
+    engines: {node: '>=10'}
+    dev: false
+
   /brace-expansion/1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
     dependencies:
@@ -815,6 +830,11 @@ packages:
   /colorette/1.4.0:
     resolution: {integrity: sha512-Y2oEozpomLn7Q3HFP7dpww7AtMJplbM9lGZP6RDfHqmbeRjiwRg4n6VM6j4KLmRke85uWEI7JqF17f3pqdRA0g==}
     dev: false
+
+  /commander/8.3.0:
+    resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
+    engines: {node: '>= 12'}
+    dev: true
 
   /concat-map/0.0.1:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
@@ -1933,6 +1953,13 @@ packages:
     resolution: {integrity: sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==}
     engines: {node: '>=10'}
     hasBin: true
+    dev: true
+
+  /mockjs/1.1.0:
+    resolution: {integrity: sha512-eQsKcWzIaZzEZ07NuEyO4Nw65g0hdWAyurVol1IPl1gahRwY+svqzfgfey8U8dahLwG44d6/RwEzuK52rSa/JQ==}
+    hasBin: true
+    dependencies:
+      commander: 8.3.0
     dev: true
 
   /ms/2.0.0:
